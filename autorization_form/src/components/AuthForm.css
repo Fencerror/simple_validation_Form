@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.25rem; 
+  background: #ffffff;
+  width: 100%;
+  max-width: 25rem; 
+  margin: 6.25vh 8.75vw; 
+  font-family: "Inter", sans-serif;
+}
+
+.auth-form {
+  width: 100%;
+  text-align: left;
+}
+
+.form-group {
+  margin: 1.25rem 0; /* 20px */
+}
+
+.phone{
+  margin: 1rem 0;
+  font-size: 350;
+}
+
+
+
+input {
+  width: 100%;
+  padding: 0.625rem; /* 10px */
+  border: 1px solid #ccc;
+  border-radius: 0.25rem; /* 4px */
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+.input-error {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.75rem; /* 12px */
+  margin-top: 0.3125rem; /* 5px */
+}
+
+.submit-button {
+  width: 77%;
+  height: auto; /* Высота будет зависеть от содержимого */
+  padding: 0.9375rem 0.625rem; /* 15px 10px */
+  margin-top: 3vh;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.75rem; /* 12px */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0052CC;
+}
+
+.submit-button:active {
+  background-color: #0056b3;
+}
+
+.resend-button{
+  width: 77%;
+  height: auto; /* Высота будет зависеть от содержимого */
+  padding: 0.9375rem 0.625rem; /* 15px 10px */
+  margin-top: 3vh;
+  text-decoration: underline;
+  border: none;
+  background-color: white;
+  text-align: start;
+  border-radius: 0.75rem; /* 12px */
+  cursor: pointer;
+}
+
+.resend-timer{
+  font-size: smaller;
+  color:grey
+}
+
+@media (max-width: 600px) {
+  .auth-form-container {
+    padding: 0.9375rem; /* 15px */
+  }
+}
